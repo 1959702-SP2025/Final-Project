@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register — Sprout & Grow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="images/sprout-grow-horizontal-524-transparent.png" 
+       alt="Sprout & Grow logo" class="logo">
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>Event Registration</h1>
+
+  <form action="#" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="event">Workshop Selection:</label><br>
+    <select id="event" name="event" required>
+      <option value="">Select an event</option>
+      <option value="seeds">Starting Seeds with Confidence</option>
+      <option value="spaces">Growing in Small Spaces</option>
+      <option value="compost">Composting 101</option>
+    </select><br><br>
+
+    <label for="message">Comments / Questions:</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+    <button type="submit">Submit Registration</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="social">
+    <a href="https://www.facebook.com/login/">
+      <img src="images/facebook-logo.png" alt="Facebook logo">
+    </a>
+    <a href="https://twitter.com/login">
+      <img src="images/x-logo.png" alt="X (Twitter) logo">
+    </a>
+  </div>
+  <p>&copy; <span id="year"></span> Sprout & Grow — All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
